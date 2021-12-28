@@ -1,16 +1,17 @@
-﻿using HepsiMarsApp.Enums; 
+﻿using HepsiMarsApp.Enums;
+using HepsiMarsApp.Models;
 using System;
 
-namespace HepsiMarsApp.Models
+namespace HepsiMarsApp
 {
-    public class RoverVehicle
+    public class RoverManager
     {
         public int PositionX { get; set; }
         public int PositionY { get; set; }
         Direction RoverDirection { get; set; }
         Plateau Plateau { get; set; }
         
-        public RoverVehicle(int x, int y, Direction direction, Plateau plateau)
+        public RoverManager(int x, int y, Direction direction, Plateau plateau)
         {
             PositionX = x;
             PositionY = y;
