@@ -2,7 +2,7 @@
 
 Welcome to HepsiMars!
 
-I developed the project for job case!
+I developed the project for study case!
 
 Thank you, HepsiBurada!
 
