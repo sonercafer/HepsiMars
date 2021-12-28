@@ -8,14 +8,13 @@ namespace HepsiMarsApp
     {
         static void Main(string[] args)
         {
-            var firstRover = new RoverManager(1, 2, Direction.N, new Plateau(5, 5));
-            firstRover.Command("LMLMLMLMM");
-            firstRover.WritePosition();
+            var firstRover = new RoverVehicle(1, 2, Direction.N, new Plateau(5, 5));
+            var firstResult = firstRover.Process("LMLMLMLMM");
+            Console.WriteLine(firstResult);
 
-            var secondRover = new RoverManager(3, 3, Direction.E, new Plateau(5, 5));
-            secondRover.Command("MMRMMRMRRM");
-            secondRover.WritePosition();
-
+            var secondRover = new RoverVehicle(3, 3, Direction.E, new Plateau(5, 5));
+            var secondResult = secondRover.Process("MMRMMRMRRM");
+            Console.WriteLine(secondResult);
             Console.ReadKey();
         }
     }
